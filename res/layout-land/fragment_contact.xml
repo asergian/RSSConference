@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_page" 
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:background="@color/aggie_blue_20"
+    android:orientation="horizontal"
+    
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.shronas.rssconference.Contact$PlaceholderFragment" >
+
+    <ImageView  
+         android:id="@+id/contact_picture" 
+         android:contentDescription="@string/contentDesc"
+         android:layout_width="0dp"  
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:scaleType="centerCrop" /> 
+         
+    <RelativeLayout
+         android:layout_width="0dp"  
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:layout_marginLeft="10dp">
+        
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/contact_default"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp" /> 
+        
+    <LinearLayout
+        android:id="@+id/contact_reach"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/contact_name"  
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        
+        <TextView
+            android:id="@+id/contact_call" 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:text="@string/call_text"
+            android:textSize="35sp"
+            android:textColor="@color/win8_blue"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/contact_button_back"
+            android:layout_marginRight="1dp" />
+        
+        <TextView
+            android:id="@+id/contact_text" 
+            android:layout_width="match_parent"  
+            android:layout_height="0dp"
+            android:layout_weight="1" 
+            android:text="@string/message_text"
+            android:textSize="35sp"
+            android:textColor="@color/win8_blue"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/contact_button_back"
+            android:layout_marginTop="5dp" />        
+
+    </LinearLayout>
+    
+    </RelativeLayout>
+</LinearLayout>

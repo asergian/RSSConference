@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RSS Conference</string>
+
+    <!-- Home -->
+    <string name="gear_up">Gear up for Conference!</string>
+    <string name="countdown_text">Friday, May 2nd\n-\nSunday, May 4th</string>
+    <string name="website">Visit the conference </string>
+    <string name="updates"> on conference </string>
+    <string name="clock">clock background</string>
+    
+    <!-- Events -->
+    <string name="title_activity_event">Event</string>
+    <string name="event_default">Event</string>
+    <string name="event_time_default">Time</string>
+    <string name="event_loc_default">Location</string>
+    <string name="click_for_map">Click for full Map</string>
+    <string name="click_for_directions">Click for Directions</string>
+    <string name="event_details_default">Details</string>
+
+    <!-- Map -->
+    <string name="title_activity_map">Map</string>
+    
+    <!-- Contacts -->
+    <string name="title_activity_contact">Contact</string>
+    <string name="contact_default">Contact</string>
+    <string name="contentDesc">Image</string>
+    <string name="call_text">Call</string>
+    <string name="message_text">Message</string>
+    
+    <!-- Main Drawer / Common -->
+    <string name="drawer_open">Menu</string>
+    <string name="drawer_close">RSS Yo!</string>
+    <string name="action_websearch"><a href="http://signup.regentsscholarsconference.org/home">Website</a></string>
+    <string name="app_not_available">Can\'t find application with internet connectivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Select</string>
+
+</resources>

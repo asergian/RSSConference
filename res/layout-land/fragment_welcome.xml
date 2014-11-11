@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:fontFamily="sans-serif-thin"
+    android:gravity="center"
+    tools:context="com.shronas.rssconference.Home$ContentFragment" >
+
+    <!--     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" -->
+  
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:alpha="0.4"
+        android:contentDescription="@string/clock"
+        android:scaleType="centerCrop"
+        android:src="@drawable/clock" />
+    
+    <TextView
+        android:id="@+id/gear_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/gear_up"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-thin" 
+        android:paddingTop="@dimen/activity_vertical_margin" />
+            
+    <TextView
+        android:id="@+id/countdown_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:lineSpacingMultiplier="0.65"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/countdown_text"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+  
+    <LinearLayout
+        android:id="@+id/updates"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+        
+        <TextView
+            android:id="@+id/updates_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin" 
+            android:textColor="@color/white" />  
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:text="@string/updates"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-thin" 
+            android:textColor="@color/white" /> 
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/website"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/updates">
+        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingRight="3dp"
+		        android:text="@string/website"
+		        android:textSize="20sp"
+		        android:fontFamily="sans-serif-thin" 
+		        android:textColor="@color/white" />
+		    <TextView
+		        android:id="@+id/website_link"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:fontFamily="sans-serif-thin" 
+		        android:textColor="@color/white" />
+		</LinearLayout>
+
+</RelativeLayout>

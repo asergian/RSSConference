@@ -1,0 +1,41 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/contact_list_row" 
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:minHeight="70dp" >  
+
+    <TextView  
+        android:id="@+id/name"
+        android:paddingLeft="25dp" 
+        android:layout_width="0dp"  
+        android:layout_height="match_parent" 
+        android:layout_weight="4"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+    
+    <!-- ?android:attr/listPreferredItemHeightSmall -->
+
+    <TextView  
+        android:id="@+id/title" 
+        android:paddingRight="25dp"
+        android:layout_width="0dp"  
+        android:layout_height="match_parent" 
+        android:layout_weight="3"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:gravity="right|center_vertical"
+        android:textSize="15sp" />
+    
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:contentDescription="@string/next"
+        android:paddingRight="25dp"
+        android:layout_width="0dp"  
+        android:layout_height="match_parent" 
+        android:layout_weight="1"
+        android:src="@drawable/next" />
+</LinearLayout>
